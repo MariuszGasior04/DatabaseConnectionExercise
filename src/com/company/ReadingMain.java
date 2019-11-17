@@ -23,6 +23,8 @@ public class ReadingMain {
                 System.out.println(resultset.getString(2));
                 System.out.println(resultset.getString("name"));
             }
+            resultset.close();
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
